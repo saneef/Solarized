@@ -31,7 +31,7 @@
         "caret": "var(base02)",
         "invisibles": "color(var(base1) alpha(0.3))",
 
-        "highlight": "var(violet)",
+        "highlight": "var(base1)",
         "selection": "var(violet)",
         "selection_border": "var(violet)",
         "selection_foreground": "var(base2)"
@@ -48,17 +48,18 @@
         {
             "name": "Header & Footer",
             "scope": "header.find-in-files, footer.find-in-files",
-            "foreground": "var(base1)"
+            "foreground": "var(base01)"
         },
         {
             "name": "Counts",
             "scope": "variable.total_files_count.find-in-files, variable.matched_count.find-in-files, variable.matched_files_count.find-in-files",
-            "foreground": "var(blue)"
+            "foreground": "var(blue)",
+            "font_style": "bold"
         },
         {
             "name": "Query",
             "scope": "string.query.find-in-files",
-            "font_style": "italic"
+            "font_style": "bold"
         }
     ]
 }
