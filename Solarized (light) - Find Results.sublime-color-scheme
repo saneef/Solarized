@@ -34,7 +34,7 @@
         "highlight": "var(base1)",
         "selection": "var(violet)",
         "selection_border": "var(violet)",
-        "selection_foreground": "var(base2)"
+        "selection_foreground": "var(base3)"
     },
     "rules":
     [
