@@ -1,0 +1,91 @@
+{
+    "name": "Solarized (light) - orgmode",
+    "author": "Koen Lageveen",
+    "variables": {
+        "base03": "#002b36",
+        "base02": "#073642",
+        "base01": "#586e75",
+        "base00": "#657b83",
+        "base0": "#839496",
+        "base1": "#93a1a1",
+        "base2": "#eee8d5",
+        "base3": "#fdf6e3",
+        "yellow": "#b58900",
+        "orange": "#cb4b16",
+        "red": "#dc322f",
+        "magenta": "#d33682",
+        "violet": "#6c71c4",
+        "blue": "#268bd2",
+        "cyan": "#2aa198",
+        "green": "#859900"
+    },
+    "globals": {
+        "background": "var(base3)",
+        "foreground": "var(base00)",
+        "line_highlight": "var(base2)",
+        "gutter": "var(base2)",
+        "minimap_border": "var(base2)",
+
+        "caret": "var(base02)",
+        "invisibles": "color(var(base1) alpha(0.3))",
+        "misspelling": "var(red)",
+
+        "highlight": "var(base1)",
+        "find_highlight": "var(base2)",
+        "find_highlight_foreground": "var(base03)",
+
+        "accent": "var(yellow)",
+        "fold_marker": "var(yellow)",
+
+        "guide": "var(base2)",
+        "active_guide": "var(base1)",
+        "stack_guide": "var(base2)",
+
+        "selection": "color(var(base1) blend(var(base3) 25%))",
+        "selection_border": "color(var(base1) blend(var(base3) 50%))",
+        "inactive_selection": "var(base2)",
+
+        "brackets_options": "underline",
+        "brackets_foreground": "var(green)",
+        "bracket_contents_options": "stippled_underline",
+        "bracket_contents_foreground": "var(green)",
+        "tags_options": "stippled_underline",
+        "tags_foreground": "var(green)",
+
+        "shadow": "var(base1)",
+        "shadow_width": "4"
+    },
+    "rules": [
+        {
+            "name": "orgmode link",
+            "scope": "orgmode.link",
+            "foreground": "var(magenta)",
+            "font_style": "italic"
+        },
+        {
+            "name": "orgmode page, tack, follow up, and checkbox",
+            "scope": "orgmode.page, orgmode.tack, orgmode.follow_up, orgmode.checkbox, orgmode.checkbox.summary",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "orgmode break",
+            "scope": "orgmode.break",
+            "foreground": "var(base1)"
+        },
+        {
+            "name": "orgmode headline",
+            "scope": "orgmode.headline",
+            "foreground": "var(base02)"
+        },
+        {
+            "name": "orgmode tags and deadline",
+            "scope": "orgmode.tags, orgmode.deadline",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "orgmode scheduled",
+            "scope": "orgmode.scheduled",
+            "foreground": "var(blue)"
+        }
+    ]
+}
