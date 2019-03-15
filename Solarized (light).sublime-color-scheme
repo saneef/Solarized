@@ -55,7 +55,11 @@
         "tags_foreground": "var(green)",
 
         "shadow": "var(base1)",
-        "shadow_width": "4"
+        "shadow_width": "4",
+
+        "line_diff_added": "var(green)",
+        "line_diff_modified": "var(yellow)",
+        "line_diff_deleted": "var(orange)"
     },
     "rules":
     [
@@ -518,6 +522,46 @@
             "name": "JavaScript Variables",
             "scope": "variable.other.readwrite.js, variable.other.object.js, variable.other.constant.js",
             "foreground": "var(base00)"
+        },
+        {
+            "name": "diff.header",
+            "scope": "meta.diff, meta.diff.header",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "diff.deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "diff.inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "diff.changed",
+            "scope": "markup.changed",
+            "foreground": "var(yellow)"
+        },
+        {
+            "scope": "diff.deleted",
+            "foreground_adjust": "s(- 40%)",
+            "background": "color(var(red) blend(var(base3) 50%) l(+ 15%))"
+        },
+        {
+            "scope": "diff.deleted.char",
+            "foreground": "var(red)",
+            "background": "color(var(red) blend(var(base3) 50%) l(- 5%))"
+        },
+        {
+            "scope": "diff.inserted",
+            "foreground_adjust": "s(- 40%)",
+            "background": "color(var(green) blend(var(base3) 50%) l(+ 25%))"
+        },
+        {
+            "scope": "diff.inserted.char",
+            "foreground": "var(green)",
+            "background": "color(var(green) blend(var(base3) 50%) l(+ 25%))"
         }
     ]
 }
