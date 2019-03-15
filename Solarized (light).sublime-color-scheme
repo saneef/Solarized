@@ -110,7 +110,7 @@
         {
             "name": "Import",
             "scope": "meta.import keyword, keyword.control.import, keyword.control.import.from, keyword.other.import, keyword.control.at-rule.include, keyword.control.at-rule.import",
-            "foreground": "var(orange)"
+            "foreground": "var(green)"
         },
         {
             "name": "Operators",
